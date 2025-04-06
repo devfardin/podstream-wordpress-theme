@@ -1,0 +1,118 @@
+.posts_row {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.post_thumb a img {
+    border-radius: 25px;
+    width: 100%;
+}
+.posts__auther{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.posts__auther img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px !important;
+}
+.posts__auther h3 {
+    margin: 0px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #262420;
+    font-family: 'Inter';
+}
+@media only screen and (min-width:425px){
+    .posts__auther h3 {
+    font-size: 20px;
+    }
+}
+.posts__meta_info_wrap {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top:25px;
+    font-family: 'Inter';
+}
+.post_published_date h3 {
+    font-size: 17px;
+    color: #262420;
+    font-weight: 400;
+    margin:0px;
+    font-family: 'Inter';
+}
+@media only screen and (min-width:425px){
+    .post_published_date h3 {
+    font-size: 20px;
+    }
+}
+.post_published_date {
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.post_published_date__icon svg {
+    width: 20px;
+    margin: -5px;
+    padding: 0px;
+    fill: var(--e-global-color-secondary);
+}
+.posts_text__info{
+    margin-top:10px;
+}
+.posts_text__info a {
+    color: var(--e-global-color-secondary);
+    font-size: 25px;
+    line-height:1.2em;
+    font-weight: 500;
+    transition: all 0.3s;
+    margin-bottom:10px;
+    font-family: 'Inter';
+}
+.posts_text__info a:hover{
+    color: var(--e-global-color-secondary);
+}
+@media only screen and (min-width:768px){
+    .posts_text__info a {
+    font-size: 34px;
+}
+}
+.posts_text__info .posts_info__excerpt {
+    font-size: 18px;
+    color: #585858;
+    margin: 15px 0;
+}
+@media only screen and (min-width:768px){
+    .posts_text__info .posts_info__excerpt {
+    font-size: 20px;
+}
+}
+
+.btn.btn__post {
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    font-family: 'Inter';
+    color: var(--e-global-color-secondary);
+    transition: 0.3s;
+}
+
+.btn.btn__post:hover {
+    color: var(--e-global-color-primary);
+}
+.btn.btn__post svg {
+    width: 20px;
+    fill: var(--e-global-color-secondary);
+    transition: 0.3s;
+}
+.btn.btn__post:hover svg{
+    width: 20px;
+    fill: var(--e-global-color-primary);
+    transition: 0.3s;    
+}
